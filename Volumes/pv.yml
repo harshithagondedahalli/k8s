@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: local
   accessModes:
-    ReadWriteOnce
+  - ReadWriteOnce
   capacity:
     storage: 2gi
   hostPath:
