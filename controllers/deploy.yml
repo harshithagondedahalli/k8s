@@ -6,6 +6,8 @@ metadata:
     app: nginx-my
 spec:
   replicas: 4
+  selector:
+    app: nginx-my
   template:
     metadata:
       lables:
