@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: local
   accessModes:
-    ReadWriteOnce
+  - ReadWriteOnce
   resource:
    requests:
      storage: 1Gi
