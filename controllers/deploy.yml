@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Pod
 metadata:
-  name: nginx-deployment
+  name: nginx-deploy
 spec:
   replicas: 4
   template:
     metadata:
       lables:
-      app: my-nginx
+      app: nginx
   spec:
     containers:
     - name: nginx
     ports:
     - containerport: 80
   slector:
-    app: my-nginx
+    app: nginx
