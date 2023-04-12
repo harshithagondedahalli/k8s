@@ -15,5 +15,3 @@ spec:
         ports:
           - containerport: 80
 
-  selector:
-  app: nginx-my
