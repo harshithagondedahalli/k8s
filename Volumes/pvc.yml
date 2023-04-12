@@ -4,7 +4,7 @@ metadata:
   name: my-pvc
 spec:
   StorageClassName: local
-  accessmodes:
+  accessModes:
     ReadWriteOnce
   resource:
    requests:
