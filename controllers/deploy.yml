@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       lables:
-      app: my-nginx
+      app: nginx-my
   spec:
     containers:
       - name: nginx
@@ -16,4 +16,4 @@ spec:
           - containerport: 80
 
   selector:
-    app: my-nginx
+  app: nginx-my
