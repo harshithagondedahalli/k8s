@@ -13,9 +13,9 @@ spec:
     metadata:
       lables:
         app: nginx-my
-  spec:
-    containers:
-    - name: nginx
+    spec:
+      containers:
+      - name: nginx
         image: nginx:1.14.2
         ports:
         - containerport: 80
