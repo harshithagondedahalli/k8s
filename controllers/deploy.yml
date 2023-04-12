@@ -11,7 +11,7 @@ spec:
       app: nginx-my
   template:
     metadata:
-      lables:
+      labels:
         app: nginx-my
     spec:
       containers:
