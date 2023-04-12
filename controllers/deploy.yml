@@ -14,5 +14,5 @@ spec:
       image: nginx:1.22.1
     ports:
     - containerport: 80
-  slector:
+  selector:
     app: nginx
