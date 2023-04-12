@@ -4,14 +4,14 @@ metadata:
   name: my-ip-app-volume
 spec:
   containers:
-  - name: vol-ip-app
+  - name: ip-app
     image: harshajain/ip-app:1
     ports:
     - containerport: 80
     volumeMounts:
     - name: my-volume
       mountPath: '/app/volume'
-  volume:
+  volumes:
   - name: my-volume
     persistentVolumeClaim:
       claimName: my-pvc
