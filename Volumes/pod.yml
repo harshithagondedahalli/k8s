@@ -7,7 +7,7 @@ spec:
   - name: ip-app
     image: harshajain/ip-app:1
     ports:
-    - containerport: 80
+    - containerPort: 80
     volumeMounts:
     - name: my-volume
       mountPath: '/app/volume'
