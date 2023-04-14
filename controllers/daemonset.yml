@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Daemonset
+metadata:
+  name: mydaemon
+spec:
+  conatiners:
+  - name: mycont
+    image: nginx
+    ports:
+    - containerPort: 80
