@@ -4,9 +4,9 @@ metadata:
   name: mypod
 spec:
   replicas: 4
-    selector:
-      matchLabels:
-        app: my-deployment
+  selector:
+    matchLabels:
+      app: my-deployment
   template:
     metadata:
       labels:
