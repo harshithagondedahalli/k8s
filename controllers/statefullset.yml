@@ -8,15 +8,15 @@ spec:
     matchLabels:
       app: myapp
   template:
-      metadata:
-        labels:
-          app: myapp
-      spec:
-        containers:
-        - name: mycont
-          image: nginx
-          ports:
-          - containerPort: 80
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: mycont
+        image: nginx
+        ports:
+        - containerPort: 80
 
 ---
 apiVersion: v1
