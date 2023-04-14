@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeploy
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      conatiners:
+      - name: mynode
+        image: nginx
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  type: NodePort
+spec:
+  selector:
+    app: myapp
+    ports:
+    - name: http
+      port: 30002
+      targetPort: 80
+      NodePort: 30080
