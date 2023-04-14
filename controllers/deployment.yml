@@ -2,9 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mypod
-  labels:
-    app: my-deployment
-
 spec:
   replicas: 4
     selector:
