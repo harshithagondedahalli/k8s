@@ -3,8 +3,16 @@ kind: Daemonset
 metadata:
   name: mydaemon
 spec:
-  conatiners:
-  - name: mycont
-    image: nginx
-    ports:
-    - containerPort: 80
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app:myapp
+    spec:
+      conatiners:
+      - name: mycont
+        image: nginx
+        ports:
+        - containerPort: 80
