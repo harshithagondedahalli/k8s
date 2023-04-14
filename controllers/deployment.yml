@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: 4
     selector:
-      labels:
+      matchlabels:
         app: my-deployment
 spec:
   containers:
