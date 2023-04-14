@@ -25,7 +25,7 @@ kind: Service
 metadata:
   name: clusterip
 spec:
-  seletor:
+  selector:
     matchLabels:
       app: myapp
   ports:
