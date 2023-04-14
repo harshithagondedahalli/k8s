@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mystatefulset
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: myapp
+    template:
+      metadata:
+        labels:
+          app: myapp
+      spec:
+        containers:
+        - name: mycont
+          image: nginx
+          ports:
+          - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mystateful
+spec:
+  clusterIp: None
+  selector:
+    app: myapp
+  port: 30002
+  targetPort: 80
