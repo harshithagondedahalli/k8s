@@ -29,5 +29,5 @@ spec:
     app: myapp
   ports:
   - name: http
-    port: 30001
+    port: 30002
     target: 80
