@@ -24,7 +24,7 @@ kind: Service
 metadata:
   name: mystateful
 spec:
-  clusterIp: None
+  clusterIP: None
   selector:
     app: myapp
   ports:
