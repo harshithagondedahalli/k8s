@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-    template:
+  template:
       metadata:
         labels:
           app: myapp
@@ -27,5 +27,7 @@ spec:
   clusterIp: None
   selector:
     app: myapp
-  port: 30002
+  ports:
+  -name: http
+   port: 30002
   targetPort: 80
