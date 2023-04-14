@@ -13,6 +13,6 @@ spec:
     spec:
       conatiners:
       - name: mycont
-        image: nginx
+        image: nginx:1.22.1
         ports:
         - containerPort: 80
